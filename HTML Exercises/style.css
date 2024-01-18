@@ -93,6 +93,14 @@ table th {
     background-color: #eee;
 }
 
+section {
+    display: flex;
+}
+
+aside {
+    float: right;
+}
+
 video {
     padding: 50px;
 
