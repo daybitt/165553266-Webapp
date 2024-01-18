@@ -81,7 +81,7 @@ table {
     
     border-collapse: collapse;
     width: 500px;
-    margin: 100px 10px;
+    margin: 100px 50px;
 }
 
 table th, table td {
@@ -91,4 +91,13 @@ table th, table td {
 
 table th {
     background-color: #eee;
+}
+
+video {
+    padding: 50px;
+
+}
+
+audio {
+    padding: 50px;
 }
