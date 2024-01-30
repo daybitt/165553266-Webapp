@@ -54,6 +54,12 @@ figcaption {
   text-align: center;
 }
 
+h2 {
+    padding: 50px;
+
+}
+
+
 form {
     margin: 100px 50px;
 }
