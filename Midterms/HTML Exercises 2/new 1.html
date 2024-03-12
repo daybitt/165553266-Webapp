@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class = "img-container">
+            <figure>
+                <img src="hoh-river-valley.jpg" alt="Hoh River Valley">
+                <figcaption>Hoh River Valley.</figcaption>
+            </figure>
+            <figure>
+                <img src="Figa_HTML.jpg" alt="Oulanka Park">
+                <figcaption>Oulanka National Park.</figcaption>
+            </figure>
+            <figure>
+                <img src="coniferous-forest.jpg" alt="Coniferous Forest">
+                <figcaption>Coniferous Spruce Tree Forest.</figcaption>
+            </figure>
+        </div>
+        <section>
+            <h2>Forms, Tables and Multimedia Section</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" pattern="[a-zA-Z]*"  required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="6" maxlength="12" required>
+                <br>
+                <label>Gender:</label>
+                <br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br>
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I accept the terms and conditions.</label>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bruh Bruh</td>
+                        <td>20</td>
+                        <td>Manila City</td>
+                    </tr>
+                    <tr>
+                        <td>Breh Breh</td>
+                        <td>20</td>
+                        <td>Baguio City</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <aside>
+                <div>
+                    <audio controls>
+                        <source src="morning-flower-ringtone.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+        
+                <div>
+                <video width="640" controls>
+                    <source src="file_example_MP4_640_3MG.mp4" type="video/mp4">
+                    Your browser does not support HTML video.
+                </video>
+                </div>
+                </aside>
+        </section>
+        
+        
+    </main>
+</body>
+</html>
