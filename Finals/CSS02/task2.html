@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Bird</title>
+    <style type="text/css">
+        .background {
+            background: lightblue;
+        }
+        
+        .head {
+            background: lightgray;
+            width: 100px;
+            height: 50px;
+            border-radius: 70% 100% 75% 0;
+            border: 1px solid;
+            position: relative;
+            top: 6px;
+            left: 191px;
+        }
+        .eyeball {
+            background: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 9px;
+            left: 17px;
+        }
+        .pupil {
+            background: black;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+        .beak {
+            background-color: orange;
+            color: rgb(10, 10, 10);
+            width: 30px;
+            height: 15px;
+            border-radius: 0 50% 50% 0;
+            border: 1px solid;
+            position: absolute;
+            top: 30px;
+            left: -17px;
+        }
+        .body {
+            background: lightgray;
+            width: 100px;
+            height: 100px;
+            border-radius: 0 45% 50% 50%;
+            border: 1px solid;
+            position: relative;
+            top: 0px;
+            left: 216px;
+        }
+        .wing {
+            background-color: lightgreen;
+            width: 75px;
+            height: 50px;
+            border-radius: 0 50% 50% 0;
+            position: absolute;
+            border: 1px solid;
+            top: 0px;
+            left: 39px;
+            transform: rotate(-45deg);
+        }
+
+        .drumstick {
+            background-color: #cd5151;
+            width: 10px;
+            height: 68px;
+            position: relative;
+            border: 1px solid;
+            top: -27px;
+            left: 285px;
+            transform: rotate(-56deg);
+        }
+        .drumstick-right {
+            background-color: #cd5151;
+            width: 10px;
+            height: 63px;
+            position: relative;
+            border: 1px solid;
+            top: -80px;
+            right: 33px;
+            transform: rotate(-24deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas background">
+        <div class="head">
+            <div class="eyeball">
+                <span class="pupil">·</span>
+            </div>
+            <div class="beak">
+                <strong>&gt;</strong>
+            </div>
+        </div>
+        <div class="body">
+            <div class="wing">
+                <strong>&lt;</strong>
+            </div>
+        </div>
+        <div class="drumsticks">
+            <div class="drumstick">
+                <br>/
+            </div>
+            <div class="drumstick drumstick-right">
+                <br>/
+            </div>
+        </div>
+    </div>
+
+</body></html>
