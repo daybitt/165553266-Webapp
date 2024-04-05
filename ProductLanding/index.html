@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Ube Jam</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="header">
+        <img src="ube-jam-logo.png" alt="Ube Jam Logo" id="header-img"> 
+        <nav id="nav-bar">
+            <a href="#intro" class="nav-link">Intro</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#order" class="nav-link">Order</a>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <h2>Discover the Exquisite Taste of Ube Jam</h2>
+        </section>
+
+    <section id="features">
+        <h2>Why You'll Love Our Ube Jam</h2>
+        </section>
+
+    <!--section id="video">
+        <iframe id="video" src="https://www.youtube.com/embed/yourvideoid" title="Ube Jam Product Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section-->
+
+    <section id="order">
+        <h2>Get Your Jar Today</h2>
+        <form id="form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="submit" id="submit" value="Subscribe"> 
+        </form>
+    </section>
+
+    <footer>
+        </footer>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default jump behavior
+
+            const targetId = this.getAttribute('href'); // Get the ID of the target section
+            const targetSection = document.querySelector(targetId);
+
+            targetSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start' 
+            });
+        });
+        });
+    </script>
+</body>
+</html>

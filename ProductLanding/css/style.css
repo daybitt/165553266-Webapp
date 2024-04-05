@@ -1,0 +1,26 @@
+
+body {
+    font-family: sans-serif;
+}
+
+header {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+    position: fixed; 
+    width: 100%;
+    top: 0; 
+    padding: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; 
+    }
+}
