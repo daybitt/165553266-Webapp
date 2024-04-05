@@ -15,7 +15,69 @@ html {
     color: #333;
     margin: 0;
   }
+
+  #Early {
+    background-image: url('img/56714-Chiang-Kai-Shek-Memorial-Hall.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    border-radius: 5px; 
+    background-blend-mode: lighten;
+    background-color: rgba(255,255,255,0.8);
+  }
+
+  #Leader {
+    background-image: url('img/gettyimages-515384750.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    border-radius: 5px; 
+    background-blend-mode: lighten;
+    background-color: rgba(255,255,255,0.8);
+  }
+
+  #Controversy{
+    background-image: url('img/228_by_Li_Jun.jpg'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    border-radius: 5px; 
+    background-blend-mode: lighten;
+    background-color: rgba(255,255,255,0.8);
+  }
+
+  #quote{
+    background-color: #c6b5b5;
+  }
+
+  #tribute-info {
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  } 
   
+  #banner {
+    position: relative;
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  #banner img {
+    width: 100%; 
+    height: auto;
+    opacity: 0.8; 
+  }
+
+  #banner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #000000;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+  }
+
   h1 {
     font-size: 4rem;
     margin-bottom: 0;
@@ -30,6 +92,8 @@ html {
   
   h2 {
     font-size: 3.25rem;
+    margin-top: 30px;
+    color: #5c3d2e;
   }
   
   a {
@@ -41,10 +105,7 @@ html {
   }
   
   #main {
-    margin: 30px 8px;
-    padding: 15px;
     border-radius: 5px;
-    background: #eee;
   }
   
   @media (max-width: 460px) {
@@ -66,6 +127,28 @@ html {
     margin: 0;
   }
   
+  #img-div img {
+    max-width: 45%;
+    height: auto;
+    display: inline-block;
+    margin: 10px;
+
+  }
+
+  #image-early { 
+    max-width: 20%; 
+    height: auto;
+    float: left; 
+    margin: 5px 5px 10px 200px;
+  }
+
+  #image-leader { 
+    max-width: 15%; 
+    height: auto;
+    float: left; 
+    margin: 5px 5px 10px 200px;
+  }
+
   #img-caption {
     margin: 15px 0 5px 0;
   }
@@ -98,3 +181,13 @@ html {
     margin: 0 auto 50px auto;
     text-align: left;
   }
+
+  #two-columns {
+    column-count: 2; 
+    column-gap: 30px;  
+  }
+
+  .break-here {
+    break-before: column;
+}
+
