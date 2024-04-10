@@ -1,28 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Documentation Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend Development - Advanced HTML and CSS</title>
 </head>
+
 <body>
     <nav id="navbar">
-        <header>Technical Documentation</header>
-        <!-- nav links here -->
+        <header>Frontend Development - Advanced HTML and CSS</header>
+        <ul>
+            <li><a href="#HTML5_Semantic_Elements" class="nav-link">HTML5 Semantic Elements</a></li>
+            <li><a href="#CSS_Flexbox_and_Grid_Layout" class="nav-link">CSS Flexbox and Grid Layout</a></li>
+            <li><a href="#Responsive_Web_Design" class="nav-link">Responsive Web Design</a></li>
+        </ul>
     </nav>
     <main id="main-doc">
-        <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <p>Paragraph 1</p>
-            <p>Paragraph 2</p>
-            <!--add more later -->
+        <section id="HTML5_Semantic_Elements" class="main-section">
+            <header>HTML5 Semantic Elements</header>
+            <p>Semantic elements in HTML5 provide better structure and meaning to our web pages. They describe the
+                content of the web page, making it easier for search engines and screen readers to understand the page's
+                purpose.</p>
+            <ul>
+                <li>Improve accessibility</li>
+                <li>Help search engines understand the content</li>
+                <li>Make the code more readable</li>
+            </ul>
+            <h3>Semantic Elements</h3>
+            <ul>
+                <li><code>&lt;header&gt;</code> - Defines a header section of a web page</li>
+                <li><code>&lt;nav&gt;</code> - Defines a navigation section of a web page</li>
+                <li><code>&lt;main&gt;</code> - Defines the main content of a web page</li>
+                <li><code>&lt;section&gt;</code> - Defines a section of a web page</li>
+                <li><code>&lt;article&gt;</code> - Defines an independent piece of content, like a blog post</li>
+                <li><code>&lt;aside&gt;</code> - Defines a sidebar or additional content</li>
+                <li><code>&lt;footer&gt;</code> - Defines a footer section of a web page</li>
+            </ul>
         </section>
-        <section class="main-section" id="Topic_1">
-            <header>Topic 1</header>
-            <!-- add more later -->
+        <section id="CSS_Flexbox_and_Grid_Layout" class="main-section">
+            <header>CSS Flexbox and Grid Layout</header>
+            <p>Flexbox and Grid Layout are powerful CSS modules that allow us to create complex and responsive layouts
+                easily. Flexbox is used for one-dimensional layouts, while Grid Layout is used for two-dimensional
+                layouts.</p>
+            <ul>
+                <li>Flexbox is great for aligning items in a row or column</li>
+                <li>Grid Layout is perfect for creating complex and responsive layouts</li>
+                <li>Both Flexbox and Grid Layout have excellent browser support</li>
+            </ul>
+            <h3>CSS Flexbox</h3>
+            <ul>
+                <li><code>display: flex;</code> - Defines a flex container</li>
+                <li>Flexbox properties: <code>flex-direction</code>, <code>justify-content</code>,
+                    <code>align-items</code>, <code>flex-wrap</code></li>
+            </ul>
+            <h3>CSS Grid Layout</h3>
+            <ul>
+                <li><code>display: grid;</code> - Defines a grid container</li>
+                <li>Grid properties: <code>grid-template-columns</code>, <code>grid-template-rows</code>,
+                    <code>grid-gap</code></li>
+            </ul>
         </section>
-        <!-- add more content later -->
+        <section id="Responsive_Web_Design" class="main-section">
+            <header>Responsive Web Design</header>
+            <p>Responsive Web Design (RWD) is a design approach that ensures web pages look good on all devices,
+                including desktops, laptops, tablets, and mobile phones. RWD uses a combination of flexible grids,
+                images, and CSS media queries.</p>
+            <ul>
+                <li>Improve user experience</li>
+                <li>Reduce bounce rates</li>
+                <li>Essential for modern web development</li>
+            </ul>
+            <h3>Responsive Web Design Techniques</h3>
+            <ul>
+                <li><code>width: 100%;</code> - Makes images and elements responsive</li>
+                <li><code>max-width: 100%;</code> - Prevents images from becoming too large</li>
+                <li>CSS media queries - Define styles for specific screen sizes</li>
+            </ul>
+        </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
