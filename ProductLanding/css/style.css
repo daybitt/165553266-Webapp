@@ -1,26 +1,180 @@
 
-body {
-    font-family: sans-serif;
-}
-
-header {
-    display: flex; 
-    align-items: center;
-    justify-content: space-between;
-    background-color: #f0f0f0;
-    position: fixed; 
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    top: 0; 
-    padding: 15px;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+#header-img {
+    width: 100px;
 }
 
+body {
+    background-color: #F8F0F2; 
+    color: #48284A;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+section { /* Applies to most of your content sections */
+    padding: 60px 20px;
+    border-bottom: 2px solid #e0e0e0; 
+    margin-bottom: 40px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.08);
+}
+
+#nav-bar {
+    display: flex;
+    list-style-type: none;
+}
 .nav-link {
+    margin-right: 20px;
     text-decoration: none;
+    color: #333;
 }
 
+.nav-link:hover {
+    color: #bb92e8; /* Change color on hover */
+    text-decoration: underline; 
+  }
+
+  #features { 
+    text-align: center;
+    background-color: #e4aad3; /* A slightly warmer variation */
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 30px; 
+  }
+
+#features ul li {
+    padding: 30px;            /* Increased padding */
+    border: 1px solid #e0e0e0; /* Subtle border */ 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px;      /* Optional: Space between items */
+  }
+
+  .feature img {
+    width: 80%;
+    height: 70%;
+  }
+
+  #how-its-made {
+    background-color: #e29cc5;
+    
+ }
+
+
+#video {
+    width: 100%;
+    margin-top: 50px;
+    background-color: #EBDCEF;
+    text-align: center;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+#email {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded input field */
+  }
+#submit {
+    padding: 10px 20px;
+    background-color: #7C43BD; /* A rich ube purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* For smooth transitions */
+    background: linear-gradient(to right, #7C43BD, #925DC9); 
+  }
+  
+  #submit:hover {
+    background-color: #925DC9; /* Slightly darker purple on hover */
+    transform: scale(1.05); /* Subtle increase in size */
+  }
+  
+  #pricing {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 30px; 
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+
+  .product img {
+    width: 70%;
+    height: 70%;
+  }
+
+  .btn {
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 1px black solid;
+    border-radius: 2px;
+    background: transparent;
+    cursor: pointer;
+  }
 
 @media (max-width: 600px) {
-    header {
-        flex-direction: column; 
+    #header {
+        flex-direction: column;
+    }
+    #nav-bar {
+        margin-top: 10px;
     }
 }
+
+@media (max-width: 600px) {
+    body {
+      font-size: 18px;   
+    } 
+}
+
+#hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;     /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 300px;       /* Adjust the height as needed */
+    padding: 60px 20px;      /* Padding for the entire hero section */
+  }
+
+  #hero-img { 
+    margin-bottom: 20px; 
+    padding: 20px;           /* Add padding around the image */
+  } 

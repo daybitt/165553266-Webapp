@@ -3,57 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Delicious Ube Jam</title>
+    <title>Delicious Ube Jam</title> 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header id="header">
-        <img src="ube-jam-logo.png" alt="Ube Jam Logo" id="header-img"> 
+        <img src="img/juntpedq.png" alt="Ube Jam Logo" id="header-img"> 
         <nav id="nav-bar">
-            <a href="#intro" class="nav-link">Intro</a>
             <a href="#features" class="nav-link">Features</a>
-            <a href="#order" class="nav-link">Order</a>
+            <a href="#how-its-made" class="nav-link">How It's Made</a> 
+            <a href="#pricing" class="nav-link">Pricing</a> 
         </nav>
     </header>
 
-    <section id="intro">
-        <h2>Discover the Exquisite Taste of Ube Jam</h2>
-        </section>
+    <section id="hero"> 
+        <h1>Introducing the Sweet Delight of Good Shepherd Ube Jam</h1>
+        <p>Experience the unique, vibrant flavor of Baguio's Ube in every spoonful.</p>
+        <img src="img/ube-jam-jar.jpg" alt="Jar of Ube Jam" id="hero-img">
+    </section> 
 
-    <section id="features">
-        <h2>Why You'll Love Our Ube Jam</h2>
-        </section>
-
-    <!--section id="video">
-        <iframe id="video" src="https://www.youtube.com/embed/yourvideoid" title="Ube Jam Product Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section-->
-
-    <section id="order">
-        <h2>Get Your Jar Today</h2>
-        <form id="form">
-            <input type="email" id="email" placeholder="Enter your email" required>
-            <input type="submit" id="submit" value="Subscribe"> 
-        </form>
+    <section id="features"> 
+        <h2>Amazing Features</h2>
+        <div class="features-grid"> 
+            <div class="feature"> 
+              <img src="img/fresh-ingredients.jpg" alt="Fresh Ingredients">
+              <p>Made with fresh, locally sourced ube</p>
+            </div>
+            <div class="feature"> 
+                <img src="img/goodshepherd.jpg" alt="Good Shepherd">
+                <p>Traditional recipe from the Good Shepherd Convent in Baguio</p>
+              </div>
+              <div class="feature"> 
+                <img src="img/mission.JPG" alt="Mission">
+                <p>Supports the Good Shepherd's charitable missions</p>
+              </div>
+            </div>
     </section>
 
-    <footer>
-        </footer>
+    <section id="video">
+        <h2>Crafted with Care</h2> 
+       <video src="img/good-shepherd-style-ube-jam-recipe.mp4" controls></video>
+    </section> 
 
-    <script>
-        const navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(link => {
-        link.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent default jump behavior
+    <section id="pricing">
+        <div class="product" id="12oz">
+          <div class="level">Medium</div>
+          <img src="img/12oz.jpg" alt="Fresh Ingredients">
+          <h1>12 oz</h1>
+          <h2>P350</h2>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="24oz">
+          <div class="level">Large</div>
+          <img src="img/24oz.jpg" alt="Fresh Ingredients">
+          <H1>24 oz</H1>
+          <h2>P565</h2>
+          <button class="btn">Select</button>
+        </div>
+      </section>
 
-            const targetId = this.getAttribute('href'); // Get the ID of the target section
-            const targetSection = document.querySelector(targetId);
+    <form id="form" action="https://www.freecodecamp.com/email-submit"> 
+        <input type="email" id="email" name="email" placeholder="Enter your email for updates">
+        <input type="submit" id="submit" value="Get Notified"> 
+    </form>
 
-            targetSection.scrollIntoView({ 
-                behavior: 'smooth',
-                block: 'start' 
-            });
-        });
-        });
-    </script>
 </body>
 </html>
